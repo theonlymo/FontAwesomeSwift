@@ -51,7 +51,7 @@ public extension Awesome {
                     case .solid:
                         return "FontAwesome6Free-Solid"
                     case .brand:
-                        return "FontAwesome6Brands-Brands"
+                        return "FontAwesome6Brands-Regular"
                     case .regular:
                         return "FontAwesome6Free-Regular"
                 }
