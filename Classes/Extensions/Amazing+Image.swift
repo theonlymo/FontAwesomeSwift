@@ -7,7 +7,7 @@
 //
 
 import Foundation
-#if os(iOS) || os(watchOS) || os(tvOS)
+#if os(iOS) || os(watchOS) || os(tvOS) || os(visionOS)
     import UIKit
 #elseif os(OSX)
     import Cocoa
@@ -21,7 +21,7 @@ public extension Amazing.Image {
         let fontSize = min(size.width / fontAspectRatio, size.height)
         let attributedString = NSAttributedString(icon: icon, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
         
-        #if os(iOS) || os(watchOS) || os(tvOS)
+        #if os(iOS) || os(watchOS) || os(tvOS) || os(visionOS)
             UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
             
             attributedString.draw(in: CGRect(x: 0, y: (size.height - fontSize) * 0.5, width: size.width, height: fontSize))

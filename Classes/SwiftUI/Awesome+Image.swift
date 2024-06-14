@@ -44,7 +44,7 @@ extension Awesome {
         }
         
         var image: SwiftUI.Image {
-            #if os(iOS) || os(watchOS) || os(tvOS)
+            #if os(iOS) || os(watchOS) || os(tvOS) || os(visionOS)
             SwiftUI.Image(uiImage: icon.asImage(size: size, color: foregroundColor, backgroundColor: backgroundColor))
             #elseif os(macOS)
             SwiftUI.Image(nsImage: icon.asImage(size: size, color: foregroundColor, backgroundColor: backgroundColor))
